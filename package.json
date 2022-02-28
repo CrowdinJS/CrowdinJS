@@ -1,0 +1,45 @@
+{
+  	"name": "crowdinjs",
+  	"version": "1.0.0",
+  	"description": "A library for crowdin",
+  	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"test": "turbo run test",
+		"lint": "turbo run lint",
+		"format": "turbo run format",
+		"postinstall": "husky install",
+		"changelog": "turbo run changelog",
+		"update": "yarn up \"*\" -i"
+	},
+  	"author": "Jaron Zijlstra <jaron_zijlstra@outlook.com>",
+  	"keywords": [
+  	  	"crowdin",
+  	  	"api",
+  	  	"client",
+  	  	"translation"
+  	],
+  	"repository": {
+  	  	"type": "git",
+  	  	"url": "git+https://github.com/CrowdinJS/CrowdinJS.git"
+  	},
+  	"license": "ISC",
+  	"bugs": {
+  	  	"url": "https://github.com/CrowdinJS/CrowdinJS/issues"
+  	},
+  	"homepage": "https://github.com/CrowdinJS/CrowdinJS#readme",
+  	"devDependencies": {
+  	  	"@commitlint/cli": "^16.2.1",
+  	  	"@commitlint/config-angular": "^16.2.1",
+  	  	"husky": "^7.0.4",
+  	  	"prettier": "^2.5.1",
+  	  	"turbo": "^1.1.4"
+  	},
+  	"engines": {
+  	  	"node": ">=16.9.0"
+  	},
+  	"workspaces": [
+  	  	"packages/*"
+  	],
+  	"packageManager": "yarn@3.2.0"
+}
